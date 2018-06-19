@@ -1,0 +1,10 @@
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.deps.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.runtimeconfig.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.runtimeconfig.dev.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.pdb
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.csproj.CoreCompileInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.AssemblyInfoInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.AssemblyInfo.cs
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.pdb

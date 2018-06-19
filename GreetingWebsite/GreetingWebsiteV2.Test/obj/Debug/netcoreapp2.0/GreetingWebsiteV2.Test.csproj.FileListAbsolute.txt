@@ -1,0 +1,15 @@
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.deps.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.runtimeconfig.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.runtimeconfig.dev.json
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.pdb
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.csproj.CoreCompileInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.AssemblyInfoInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.AssemblyInfo.cs
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/obj/Debug/netcoreapp2.0/GreetingWebsiteV2.Test.pdb
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/GreetingWebsite/GreetingWebsiteV2.Test/bin/Debug/netcoreapp2.0/GreetingWebsiteV2.pdb
