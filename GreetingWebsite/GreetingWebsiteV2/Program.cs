@@ -11,7 +11,9 @@ namespace GreetingWebsiteV2
     {
         static void Main(string[] args)
         {
-           WebsiteHoster.Host(args);
+           var requestTypeGetter = new ActualRequestTypeGetter();
+           var hoster = new WebsiteHoster(requestTypeGetter);
+           hoster.Host(args);
         }
 
     }

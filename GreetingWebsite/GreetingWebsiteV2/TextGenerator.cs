@@ -2,9 +2,14 @@ namespace GreetingWebsiteV2
 {
     public class TextGenerator
     {
-        public string GetText()
+        public string GetTextGET()
         {
             return "Hello World";
+        }
+
+        public string GetTextPOST(string postedData)
+        {
+            return "You posted " + postedData;
         }
     }
 }

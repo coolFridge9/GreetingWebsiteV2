@@ -6,4 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes TO Mock" />
+  </ItemGroup>
 </Project>

@@ -9,7 +9,13 @@
       <e p="GreetingWebsiteV2" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Classes TO Mock" t="Include">
+          <e p="ActualRequestTypeGetter.cs" t="Include" />
+        </e>
         <e p="GreetingWebsiteV2.csproj" t="IncludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="RequestTypeGetterInterface.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
