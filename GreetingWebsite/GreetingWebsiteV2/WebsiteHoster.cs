@@ -11,6 +11,8 @@ namespace GreetingWebsiteV2
     {
         private readonly TextGenerator _textGenerator = new TextGenerator();
         private readonly RequestTypeGetterInterface _requestTypeGetter;
+        private readonly World _world = new World();
+
 
         public WebsiteHoster(RequestTypeGetterInterface requestTypeGetter)
         {
@@ -39,7 +41,7 @@ namespace GreetingWebsiteV2
                 case "GET":
                     context.Response.StatusCode = 200;
                     await context.Response
-                        .WriteAsync(_textGenerator.GetTextGET());
+                        .WriteAsync(_textGenerator.GetTextGET(_world));
                     break;
                 case "POST":
                     context.Response.StatusCode = 200;
