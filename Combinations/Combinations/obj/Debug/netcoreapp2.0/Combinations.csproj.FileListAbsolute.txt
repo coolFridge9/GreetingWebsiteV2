@@ -1,0 +1,10 @@
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/bin/Debug/netcoreapp2.0/Combinations.deps.json
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/bin/Debug/netcoreapp2.0/Combinations.runtimeconfig.json
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/bin/Debug/netcoreapp2.0/Combinations.runtimeconfig.dev.json
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/bin/Debug/netcoreapp2.0/Combinations.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/bin/Debug/netcoreapp2.0/Combinations.pdb
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/obj/Debug/netcoreapp2.0/Combinations.csproj.CoreCompileInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/obj/Debug/netcoreapp2.0/Combinations.AssemblyInfoInputs.cache
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/obj/Debug/netcoreapp2.0/Combinations.AssemblyInfo.cs
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/obj/Debug/netcoreapp2.0/Combinations.dll
+/Users/jordan.elley/code/GreetingWebsiteV2/Combinations/Combinations/obj/Debug/netcoreapp2.0/Combinations.pdb
