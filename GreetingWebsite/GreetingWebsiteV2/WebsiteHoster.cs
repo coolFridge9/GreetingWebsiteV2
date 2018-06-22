@@ -93,23 +93,12 @@ namespace GreetingWebsiteV2
 
         private async Task POSTMethod(HttpContext context, string pathVal)
         {
-            var name = pathVal.Substring(1, pathVal.Length - 1);
-            context.Response.StatusCode = 200;
-
-            if (pathVal == "/")
-                await context.Response
-                    .WriteAsync(_textGenerator.GetTextPOSTFailed());
-            else
-            {
-                _world.AddName(name);
-                await context.Response
-                    .WriteAsync(_textGenerator.GetTextPOST(name));
-            }
             
-            /*var name = context.Request.Form.Keys.First();
+            context.Response.StatusCode = 200;
+            var name = context.Request.Form.Keys.First();
             _world.AddName(name);
             await context.Response
-                .WriteAsync(_textGenerator.GetTextPOST(name));*/
+                .WriteAsync(_textGenerator.GetTextPOST(name));
         }
 
         private async Task GETMethod(HttpContext context, string pathVal)
