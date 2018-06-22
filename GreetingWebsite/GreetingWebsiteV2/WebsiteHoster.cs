@@ -38,7 +38,6 @@ namespace GreetingWebsiteV2
 
         private async Task DecideAction(HttpContext context, string requestType)
         {
-            string data;
             var pathVal = context.Request.Path.Value;
             switch (requestType)
             {
@@ -87,8 +86,6 @@ namespace GreetingWebsiteV2
                 await context.Response
                     .WriteAsync(_textGenerator.GetTextDELETE(name));
             }
-
-            return;
         }
 
         private async Task POSTMethod(HttpContext context, string pathVal)

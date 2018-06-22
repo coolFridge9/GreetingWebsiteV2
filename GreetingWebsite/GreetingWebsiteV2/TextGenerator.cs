@@ -38,12 +38,6 @@ namespace GreetingWebsiteV2
             return nameString;
         }
 
-
-        public string GetTextPOSTFailed()
-        {
-            return "use the url to add user";
-        }
-
         public string GetTextDELETEFailed()
         {
             return "user doesn't exist";

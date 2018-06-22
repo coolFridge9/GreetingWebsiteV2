@@ -67,8 +67,8 @@ namespace GreetingWebsiteV2.Test
         {
             var textGenerator = new TextGenerator();
             var data = "Jordan";
-            var text = textGenerator.GetTextDELETE(data);
-            Assert.Equal("Jordan deletion failed", text);
+            var text = textGenerator.GetTextDELETEFailed();
+            Assert.Equal("user doesn't exist", text);
 
         }
     }
