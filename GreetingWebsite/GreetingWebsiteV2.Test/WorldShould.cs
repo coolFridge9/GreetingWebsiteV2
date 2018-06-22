@@ -15,5 +15,12 @@ namespace GreetingWebsiteV2.Test
             var expected = new List<string> {"Jordan", "karen"};
             Assert.Equal(expected,world.Names);
         }
+        [Fact]
+        public void StartWithJordanOnly()
+        {
+            var world = new World();
+            var expected = new List<string> {"Jordan"};
+            Assert.Equal(expected,world.Names);
+        }
     }
 }

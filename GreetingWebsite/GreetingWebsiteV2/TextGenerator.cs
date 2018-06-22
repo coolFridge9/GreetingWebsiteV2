@@ -5,14 +5,19 @@ namespace GreetingWebsiteV2
 {
     public class TextGenerator
     {
-        public string GetTextGET(World world)
+        public string GetTextGET(List<string> worldNames)
         {
-            return "Hello "+OrganiseNames(world.Names);
+            return "Hello "+OrganiseNames(worldNames);
         }
 
-        public string GetTextPOST(string postedData)
+        public string GetTextPOST(string data)
         {
-            return "You posted " + postedData;
+            return "Thanks " + data;
+        }
+        
+        public string GetTextDELETE(string data)
+        {
+             return data + " deleted";
         }
         
         private string OrganiseNames(List<string> worldNames)
@@ -31,6 +36,27 @@ namespace GreetingWebsiteV2
             }
 
             return nameString;
+        }
+
+
+        public string GetTextPOSTFailed()
+        {
+            return "use the url to add user";
+        }
+
+        public string GetTextDELETEFailed()
+        {
+            return "user doesn't exist";
+        }
+
+        public string GetTextPUTFailed()
+        {
+            return "user doesn't exist";
+        }
+
+        public string GetTextPUT()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
@@ -36,22 +38,98 @@ namespace GreetingWebsiteV2
 
         private async Task DecideAction(HttpContext context, string requestType)
         {
+            string data;
+            var pathVal = context.Request.Path.Value;
             switch (requestType)
             {
                 case "GET":
-                    context.Response.StatusCode = 200;
-                    await context.Response
-                        .WriteAsync(_textGenerator.GetTextGET(_world));
+                    await GETMethod(context, pathVal);
                     break;
-                case "POST":
-                    context.Response.StatusCode = 200;
-                    var postedData = context.Request.Form.Keys.First();
-                    await context.Response
-                        .WriteAsync(_textGenerator.GetTextPOST(postedData));
+                case ("POST"):
+                    await POSTMethod(context, pathVal);
                     break;
-                    
+                case ("PUT"):
+                    await PUTMethod(context, pathVal);
+                    break;
+                case ("DELETE"):
+                    await DELETEMethod(context, pathVal);
+                    break;
             }
             
+        }
+
+        private async Task PUTMethod(HttpContext context, string pathVal)
+        {
+            context.Response.StatusCode = 200;
+            var name = pathVal.Substring(1, pathVal.Length - 1);
+            if (pathVal == "/" || !_world.Names.Contains(name))
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextPUTFailed());
+            else
+            {
+                var indexToReplace = _world.Names.IndexOf(name);
+                _world.Names[indexToReplace] = context.Request.Form.Keys.First();
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextPUT());
+            }
+        }
+
+        private async Task DELETEMethod(HttpContext context, string pathVal)
+        {
+            context.Response.StatusCode = 200;
+            var name = pathVal.Substring(1, pathVal.Length - 1);
+            if (pathVal == "/" || !_world.Names.Contains(name))
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextDELETEFailed());
+            else
+            {
+                _world.DeleteName(name);
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextDELETE(name));
+            }
+
+            return;
+        }
+
+        private async Task POSTMethod(HttpContext context, string pathVal)
+        {
+            var name = pathVal.Substring(1, pathVal.Length - 1);
+            context.Response.StatusCode = 200;
+
+            if (pathVal == "/")
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextPOSTFailed());
+            else
+            {
+                _world.AddName(name);
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextPOST(name));
+            }
+            
+            /*var name = context.Request.Form.Keys.First();
+            _world.AddName(name);
+            await context.Response
+                .WriteAsync(_textGenerator.GetTextPOST(name));*/
+        }
+
+        private async Task GETMethod(HttpContext context, string pathVal)
+        {
+            context.Response.StatusCode = 200;
+            if (pathVal == "/")
+                await context.Response
+                    .WriteAsync(_textGenerator.GetTextGET(_world.Names));
+            else
+            {
+                var name = pathVal.Substring(1, pathVal.Length - 1);
+                if (_world.Names.Contains(name))
+                    await context.Response
+                        .WriteAsync(_textGenerator.GetTextGET(new List<string> {name}));
+                else
+                {
+                    await context.Response
+                        .WriteAsync(name + " Does not exist");
+                }
+            }
         }
 
         private string GetRequestType(HttpContext context)

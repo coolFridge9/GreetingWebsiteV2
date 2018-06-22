@@ -10,7 +10,7 @@ namespace GreetingWebsiteV2.Test
         {
             var world = new World();
             var textGenerator = new TextGenerator();
-            var text = textGenerator.GetTextGET(world);
+            var text = textGenerator.GetTextGET(world.Names);
             Assert.Equal("Hello Jordan", text);
         }
         
@@ -20,7 +20,7 @@ namespace GreetingWebsiteV2.Test
             var world = new World();
             world.AddName("Karen");
             var textGenerator = new TextGenerator();
-            var text = textGenerator.GetTextGET(world);
+            var text = textGenerator.GetTextGET(world.Names);
             Assert.Equal("Hello Jordan and Karen", text);
         }
         [Fact]
@@ -30,7 +30,7 @@ namespace GreetingWebsiteV2.Test
             world.AddName("Karen");
             world.AddName("Erich");
             var textGenerator = new TextGenerator();
-            var text = textGenerator.GetTextGET(world);
+            var text = textGenerator.GetTextGET(world.Names);
             Assert.Equal("Hello Jordan, Karen and Erich", text);
         }
         [Fact]
@@ -41,7 +41,7 @@ namespace GreetingWebsiteV2.Test
             world.AddName("Erich");
             world.AddName("Rob");
             var textGenerator = new TextGenerator();
-            var text = textGenerator.GetTextGET(world);
+            var text = textGenerator.GetTextGET(world.Names);
             Assert.Equal("Hello Jordan, Karen, Erich and Rob", text);
         }
         [Fact]
@@ -50,7 +50,25 @@ namespace GreetingWebsiteV2.Test
             var textGenerator = new TextGenerator();
             var postedData = "jordan";
             var text = textGenerator.GetTextPOST(postedData);
-            Assert.Equal("You posted jordan", text);
+            Assert.Equal("Thanks jordan", text);
+
+        }
+        [Fact]
+        public void ReturndataFromDelete()
+        {
+            var textGenerator = new TextGenerator();
+            var postedData = "james";
+            var text = textGenerator.GetTextDELETE(postedData);
+            Assert.Equal("james deleted", text);
+        }
+        
+        [Fact]
+        public void ReturndataFromDeleteWhenFailed()
+        {
+            var textGenerator = new TextGenerator();
+            var data = "Jordan";
+            var text = textGenerator.GetTextDELETE(data);
+            Assert.Equal("Jordan deletion failed", text);
 
         }
     }
